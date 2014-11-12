@@ -24,5 +24,16 @@
 			</tr>
 		</tbody>
 	</table>
+	<form role="form" method="post">
+		 <div class="form-group">
+		    <label>Book's name</label>
+		    <input type="text" class="form-control" placeholder="Enter book" ng-model="bookInstance.title">
+		 </div>
+		 <div class="form-group">
+		    <label>Price</label>
+		    <input type="number" class="form-control" placeholder="Price" ng-model="bookInstance.price">
+		 </div>
+		 <button type="submit" class="btn btn-default" ng-click ="save()">Submit</button>
+	</form>
 </body>
 </html
